@@ -15,3 +15,4 @@ variable "project_name" {
   description = "The name of the project to create"
   default     = "TCS_Test"  # Set the default project name
 }
+
