@@ -35,4 +35,5 @@ resource "tfe_workspace" "workspaces" {
   for_each     = toset(var.workspace_names)
   name         = each.value  # Create workspaces with the names in the list
   organization = var.organization_name
+  project_id    = tfe_project.example.id # Link the workspace to the project
 }
